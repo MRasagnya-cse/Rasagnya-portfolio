@@ -1,0 +1,50 @@
+:root{
+--bg:#f7f8fc;--surface:#fff;--surface2:#eef1f8;--text:#202532;--muted:#687386;
+--border:#e2e6ef;--accent:#6d4aff;--accent2:#8d70ff;--soft:rgba(109,74,255,.11);
+--shadow:0 18px 50px rgba(30,40,70,.10)
+}
+[data-theme=dark]{
+--bg:#0c1222;--surface:#131c31;--surface2:#17233b;--text:#eef2ff;--muted:#aab5cc;
+--border:#2b3854;--accent:#a18dff;--accent2:#b5a5ff;--soft:rgba(161,141,255,.14);
+--shadow:0 18px 50px rgba(0,0,0,.28)
+}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.7;transition:.25s}
+a{color:inherit}a:hover{color:var(--accent)}
+.portfolio-nav{background:color-mix(in srgb,var(--surface) 90%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.navbar-brand{font-size:1.5rem;color:var(--text)}.navbar-brand span,.accent{color:var(--accent)}
+.nav-link{color:var(--muted);font-weight:600}.nav-link:hover{color:var(--accent)}
+.theme-btn{border:1px solid var(--border);color:var(--text);background:var(--surface)}
+.section-padding{padding:100px 0}.section-alt{background:var(--surface2)}
+.hero{min-height:100vh;display:flex;align-items:center;padding-top:125px}
+.eyebrow{color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.16em}
+.hero h1{font-size:clamp(2.5rem,6vw,4.7rem);font-weight:850;line-height:1.05}
+.hero-text{color:var(--muted);font-size:1.15rem;max-width:650px}
+.btn-primary{--bs-btn-bg:var(--accent);--bs-btn-border-color:var(--accent);--bs-btn-hover-bg:var(--accent2);--bs-btn-hover-border-color:var(--accent2)}
+.profile-card{min-height:430px;position:relative;border:1px solid var(--border);border-radius:36px;background:radial-gradient(circle at 30% 20%,var(--soft),transparent 38%),var(--surface);box-shadow:var(--shadow);display:grid;place-items:center;overflow:hidden}
+.avatar{width:205px;height:205px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-size:4rem;font-weight:900;z-index:2;box-shadow:0 0 0 18px var(--soft),0 25px 70px rgba(109,74,255,.25)}
+.orbit{position:absolute;border:1px dashed color-mix(in srgb,var(--accent) 45%,transparent);border-radius:50%}.orbit.one{width:330px;height:330px}.orbit.two{width:460px;height:460px}
+.floating-card{position:absolute;z-index:3;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:.8rem 1rem;box-shadow:var(--shadow);font-weight:700}.floating-card i{color:var(--accent);margin-right:.45rem}
+.one-card{top:13%;left:4%}.two-card{bottom:13%;right:4%}
+.section-heading{margin-bottom:45px}.section-heading>span{color:var(--accent);font-size:.8rem;font-weight:800;letter-spacing:.12em}
+.section-heading h2{margin:.35rem 0 0;font-size:clamp(2rem,4vw,3rem);font-weight:850}
+.content-card,.skill-card,.project-card{background:var(--surface);border:1px solid var(--border);border-radius:22px;box-shadow:0 8px 30px rgba(20,30,50,.04)}
+.content-card{padding:30px}.content-card p{color:var(--muted)}
+.objective{border-top:4px solid var(--accent)}.big-icon{font-size:2.2rem;color:var(--accent)}
+.pills{display:flex;flex-wrap:wrap;gap:.65rem;margin-top:1.4rem}.pills span{background:var(--soft);border-radius:999px;padding:.45rem .8rem;font-size:.88rem}.pills i{color:var(--accent)}
+.table{--bs-table-bg:transparent;--bs-table-color:var(--text);--bs-table-border-color:var(--border)}
+.table thead th{color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.05em}
+.badge-result{display:inline-block;background:var(--soft);color:var(--accent);border-radius:999px;padding:.35rem .65rem;font-weight:800;white-space:nowrap}
+.skill-card{padding:28px;transition:.25s}.skill-card:hover,.project-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.skill-card i{font-size:2rem;color:var(--accent)}.skill-card h3{font-size:1.15rem;margin-top:1rem}.skill-card p{color:var(--muted)}
+.professional{margin-top:30px}.project-card{overflow:hidden;transition:.25s}.project-icon{height:175px;display:grid;place-items:center;background:var(--soft);color:var(--accent);font-size:3.5rem}
+.project-body{padding:30px}.project-tag{color:var(--accent);font-size:.78rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase}.project-body h3{font-size:1.45rem;margin:.55rem 0}.project-body p{color:var(--muted)}
+.tech-list{display:flex;flex-wrap:wrap;gap:.45rem}.tech-list span{border:1px solid var(--border);border-radius:7px;padding:.3rem .55rem;color:var(--muted);font-size:.78rem}
+.achievement{display:flex;gap:.8rem;align-items:center;padding:.9rem 0;border-bottom:1px solid var(--border)}.achievement:last-child{border-bottom:0}.achievement i{color:var(--accent)}
+.contact-line{display:flex;gap:.8rem;align-items:center;margin-top:1.2rem}.contact-line i{color:var(--accent)}.contact-line a{word-break:break-word}
+.quick-links{display:flex;gap:.8rem}.quick-links a{width:42px;height:42px;display:grid;place-items:center;border:1px solid var(--border);border-radius:50%;background:var(--surface);text-decoration:none;color:var(--muted)}.quick-links a:hover{color:var(--accent);border-color:var(--accent)}
+.form-control{background:var(--surface);color:var(--text);border-color:var(--border)}.form-control:focus{background:var(--surface);color:var(--text);border-color:var(--accent);box-shadow:0 0 0 .2rem var(--soft)}
+.footer{padding:25px 0;background:var(--surface);border-top:1px solid var(--border);color:var(--muted);font-size:.9rem}
+.back-to-top{position:fixed;right:22px;bottom:22px;width:45px;height:45px;border:0;border-radius:50%;background:var(--accent);color:#fff;display:none;place-items:center;box-shadow:var(--shadow);z-index:1000}.back-to-top.show{display:grid}
+@media(max-width:991.98px){.hero{min-height:auto;padding-top:120px}.profile-card{min-height:360px}}
+@media(max-width:575.98px){.section-padding{padding:75px 0}.profile-card{min-height:320px}.avatar{width:160px;height:160px;font-size:3.2rem}.orbit.one{width:250px;height:250px}.orbit.two{width:340px;height:340px}.floating-card{font-size:.75rem;padding:.55rem .7rem}}
